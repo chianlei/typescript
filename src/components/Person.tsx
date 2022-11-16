@@ -1,3 +1,5 @@
+//object
+
 type PersonProps = {
   name: {
     first: string

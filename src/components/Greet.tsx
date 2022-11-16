@@ -1,3 +1,5 @@
+// number & boolean
+
 type GreetProps = {
     name: string
     messageCount: number
