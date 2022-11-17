@@ -1,4 +1,4 @@
-// 里面有<Heading></Heading>
+// 里面有<Heading></Heading> 是children
 
 type OscarProps = {
   children: React.ReactNode;

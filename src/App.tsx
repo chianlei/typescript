@@ -1,6 +1,8 @@
 import "./App.css";
+import { Button } from "./components/Button";
 import { Greet } from "./components/Greet";
 import { Heading } from "./components/Heading";
+import { Input } from "./components/Input";
 import { Oscar } from "./components/Oscar";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
@@ -32,11 +34,20 @@ function App() {
       {/* <Greet name="Lei" messageCount={20} isLoggedIn={false} />
       <Person name={personName} />
       <PersonList names={nameList} /> */}
-      <Status status="success" />
+
+      {/* <Status status="success" />
       <Heading>Placeholder text</Heading>
       <Oscar>
         <Heading>Oscar goes to Leonardo Dicpario!</Heading>
       </Oscar>
+      <Greet name="Lei" isLoggedIn={false} /> */}
+
+      <Button
+        handleClick={(event, id) => {
+          console.log("Button clicked", event, id);
+        }}
+      />
+      <Input value="" handleChange={(event) => console.log(event)} />
     </div>
   );
 }
